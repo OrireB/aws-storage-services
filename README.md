@@ -14,6 +14,25 @@ This project involves creating an AWS S3 bucket to upload, retrieve, and delete 
 **Mentee Name**: Patricia Ada  
 **Website Hosted**: [View Website](https://my-first-bucket-project-test.s3.us-east-1.amazonaws.com/index.html)
 
+## Bucket Policy
+
+{
+   "Id": "Policy1",
+   "Version": "2012-10-17",
+   "Statement": [
+       {
+           "Sid": "Stmt1",
+           "Action": [
+              "s3:GetObject"
+           ],
+           "Effect": "Allow",
+           "Resource": "arn:aws:s3:::my-first-bucket-project-test/*",
+           "Principal": "*"
+       }
+   ]
+}	
+
+
 ## 📸 Screenshots
 
 Here are the key screenshots:
@@ -26,22 +45,6 @@ Here are the key screenshots:
 
 - **Screenshot 1**: The live site in the browser
   ![The live site in the browser](https://github.com/OrireB/aws-storage-services/blob/main/Live%20site%20in%20the%20browser.png?raw=true)
-
-## Bucket Policy
-
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadGetObject",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::frontend-website-host-bucket/*"
-    }
-  ]
-}
-
 
 ## 📐 Architectural Diagram
 
