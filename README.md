@@ -34,22 +34,22 @@ This project involves creating an AWS S3 bucket to upload, retrieve, and delete 
 
 ## Use AWS CLI to Manage S3 Buckets and Objects
 
-## Make sure AWS CLI is configured
-aws configure
+- **Make sure AWS CLI is configured**
+  aws configure
 
-**List buckets**
-aws s3 ls
+- **List buckets**
+  aws s3 ls
 
-**List objects in bucket**
-aws s3 ls s3://my-first-bucket-project-test/
+- **List objects in bucket**
+  aws s3 ls s3://my-first-bucket-project-test/
 
-**Sync local dir to S3**
-aws s3 sync ./local-folder/ s3://my-first-bucket-project-test/
+- **Sync local dir to S3**
+  aws s3 sync ./local-folder/ s3://my-first-bucket-project-test/
 
-**Delete bucket**
-aws s3 rb s3://my-first-bucket-project-test --force
-OR
-aws s3 rm s3://my-first-bucket-project-test/ --recursive
+- **Delete bucket**
+  aws s3 rb s3://my-first-bucket-project-test --force
+  OR
+  aws s3 rm s3://my-first-bucket-project-test/ --recursive
 
 ## Screenshots
 
@@ -64,7 +64,7 @@ Here are the key screenshots:
 - **Screenshot 3**: The live site in the browser
   ![The live site in the browser](https://github.com/OrireB/aws-storage-services/blob/main/Live%20site%20in%20the%20browser.png?raw=true)
 
-## 📐 Architectural Diagram
+## Architectural Diagram
 
 ![Architecture](architecture-diagram.png)
 
