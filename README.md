@@ -34,21 +34,28 @@ This project involves creating an AWS S3 bucket to upload, retrieve, and delete 
 
 ## Use AWS CLI to Manage S3 Buckets and Objects
 
-- **Make sure AWS CLI is configured**
+- **Make sure AWS CLI is configured**:
+  
   aws configure
 
 - **List buckets**
-  aws s3 ls
+
+   aws s3 ls
 
 - **List objects in bucket**
+
   aws s3 ls s3://my-first-bucket-project-test/
 
 - **Sync local dir to S3**
+
   aws s3 sync ./local-folder/ s3://my-first-bucket-project-test/
 
 - **Delete bucket**
+
   aws s3 rb s3://my-first-bucket-project-test --force
+
   OR
+
   aws s3 rm s3://my-first-bucket-project-test/ --recursive
 
 ## Screenshots
